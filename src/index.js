@@ -19,6 +19,20 @@ const userRoutes = require('./routes/userRoute');
 app.use('/api/users', userRoutes);
 
 
+
+// Rutas para crear dentistas
+const dentistaRoutes = require('./routes/dentistaRoute');
+app.use('/api/dentistas', dentistaRoutes);
+
+
+
+// Rutas para crear pacientes
+const pacienteRoutes = require('./routes/pacienteRoute');
+app.use('/api/pacientes', pacienteRoutes);
+
+
+
+
 //Inicializar el servidor
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, ()=> {
