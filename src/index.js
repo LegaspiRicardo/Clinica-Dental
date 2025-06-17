@@ -32,6 +32,11 @@ app.use('/api/pacientes', pacienteRoutes);
 
 
 
+// Rutas para crear pagos
+const pagoRoutes = require('./routes/pagoRoute');
+app.use('/api/pagos', pagoRoutes);
+
+
 
 //Inicializar el servidor
 const PORT = process.env.PORT || 5000;
